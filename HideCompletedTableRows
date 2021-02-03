@@ -1,0 +1,9 @@
+var table = document.getElementById("ChangesList_TABLE");
+var c = 0;
+
+for (var r = 1, n = table.rows.length; r < n; r++) {
+	if(table.rows[r].cells[6].innerHTML.includes("Completed") || table.rows[r].cells[6].innerHTML.includes("Withdrawn"))
+	{
+	    table.rows[r].style.display = "none";
+	}
+  }
